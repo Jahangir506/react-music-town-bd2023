@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "name": "Coachella Valley Music and Arts Festival",
+      "location": "Indio, California",
+      "dates": ["2023-04-14", "2023-04-15", "2023-04-16"],
+      "genres": ["rock", "pop", "electronic", "hip hop", "indie"],
+      "brands": ["Pepsi", "Spotify", "American Express"]
+    },
+    {
+      "id": 2,
+      "name": "Lollapalooza",
+      "location": "Chicago, Illinois",
+      "dates": ["2023-08-04", "2023-08-05", "2023-08-06", "2023-08-07"],
+      "genres": ["rock", "pop", "electronic", "hip hop", "indie"],
+      "brands": ["Budweiser", "Apple Music", "Visa"]
+    },
+    {
+      "id": 3,
+      "name": "Glastonbury Festival",
+      "location": "Pilton, Somerset, England",
+      "dates": ["2023-06-21", "2023-06-22", "2023-06-23", "2023-06-24", "2023-06-25"],
+      "genres": ["rock", "pop", "electronic", "hip hop", "indie", "world music"],
+      "brands": ["Barclays", "BBC", "Oxfam"]
+    },
+    {
+      "id": 4,
+      "name": "Austin City Limits Music Festival",
+      "location": "Austin, Texas",
+      "dates": ["2023-10-06", "2023-10-07", "2023-10-08", "2023-10-09", "2023-10-14", "2023-10-15", "2023-10-16"],
+      "genres": ["rock", "pop", "electronic", "hip hop", "indie", "country"],
+      "brands": ["AT&T", "Amazon Music", "Mastercard"]
+    },
+    {
+      "id": 5,
+      "name": "Electric Daisy Carnival",
+      "location": "Las Vegas, Nevada",
+      "dates": ["2023-05-19", "2023-05-20", "2023-05-21"],
+      "genres": ["electronic", "dance"],
+      "brands": ["Insomniac Events", "Heineken", "T-Mobile"]
+    },
+    {
+      "id": 6,
+      "name": "Stagecoach Country Music Festival",
+      "location": "Indio, California",
+      "dates": ["2023-04-28", "2023-04-29", "2023-04-30"],
+      "genres": ["country"],
+      "brands": ["Anheuser-Busch", "Spotify", "Visa"]
+    }
+  ]
