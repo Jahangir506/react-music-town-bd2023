@@ -14,7 +14,7 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 const EnjoyPlayMusicAndLyrics = () => {
     return (
-        <div>
+        <div className='h-[440px]'>
             <Swiper
         effect={'coverflow'}
         grabCursor={true}

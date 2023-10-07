@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import signUp from '../../assets/images/Screenshot_2.png';
+import signUp from '../../assets/images/signUp.png';
 
 const SignUp = () => {
   return (

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import loginIn from '../../assets/images/Screenshot_3.png';
+import loginIn from '../../assets/images/login.png';
 
 const login = () => {
   return (

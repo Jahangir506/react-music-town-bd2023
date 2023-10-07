@@ -4,11 +4,11 @@ import HeaderBg from "../components/Header/HeaderBg";
 
 const MainRoot = () => {
   return (
-    <div>
+    <div className="font-roboto">
       <div>
         <HeaderBg></HeaderBg>
       </div>
-      <div className="h-[300px] max-w-6xl mx-auto">
+      <div className=" max-w-6xl mx-auto">
         <Outlet></Outlet>
       </div>
       <div>

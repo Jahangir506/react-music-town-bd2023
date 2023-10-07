@@ -14,28 +14,26 @@ const Home = () => {
 
 
   return (
-    <div>
-      <div className="my-14">
-        <div className="my-10">
+      <div className="mt-12">
+        <div>
           <h1 className="text-4xl text-center font-bold underline">
             Our Services
           </h1>
-          <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <div className="my-14 grid grid-cols-1 lg:grid-cols-3 gap-4">
             {
                 musicServiceCards.map(musicServiceCard => <MusicTownServices key={musicServiceCard.id} musicServiceCard={musicServiceCard}></MusicTownServices>)
             }
           </div>
         </div>
-        <div className="my-10">
+        <div>
           <h1 className="text-4xl text-center font-bold underline">
             Enjoy Music
           </h1>
-          <div className="mt-8">
+          <div>
             <EnjoyPlayMusicAndLyrics></EnjoyPlayMusicAndLyrics>
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
