@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 const MusicTownServices = ({ musicServiceCard }) => {
-  console.log(musicServiceCard);
+  const {name,brands_info, img} = musicServiceCard || {};
 
   return (
     <>
@@ -9,12 +9,13 @@ const MusicTownServices = ({ musicServiceCard }) => {
         <div>
           <figure>
             <img
-              src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+              src={img}
               alt="Shoes"
+              className="rounded-t"
             />
           </figure>
           <div className="card-actions justify-center">
-            <button className="btn btn-primary w-full">Details</button>
+            <button className="w-full bg-red-400 py-4 hover:bg-red-600 rounded-b text-white">{name}</button>
           </div>
         </div>
       </div>

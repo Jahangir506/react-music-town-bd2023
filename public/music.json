@@ -1,49 +1,116 @@
 [
-    {
-      "id": 1,
-      "name": "Brands",
-      "location": "Bangladesh",
-      "top_Album": ["rock", "pop", "electronic", "hip hop", "indie"],
-      "brands": ["Pepsi", "Spotify", "American Express"]
-    },
-    {
-      "id": 2,
-      "name": "Lollapalooza",
-      "location": "Chicago, Illinois",
-      "dates": ["2023-08-04", "2023-08-05", "2023-08-06", "2023-08-07"],
-      "genres": ["rock", "pop", "electronic", "hip hop", "indie"],
-      "brands": ["Budweiser", "Apple Music", "Visa"]
-    },
-    {
-      "id": 3,
-      "name": "Glastonbury Festival",
-      "location": "Pilton, Somerset, England",
-      "dates": ["2023-06-21", "2023-06-22", "2023-06-23", "2023-06-24", "2023-06-25"],
-      "genres": ["rock", "pop", "electronic", "hip hop", "indie", "world music"],
-      "brands": ["Barclays", "BBC", "Oxfam"]
-    },
-    {
-      "id": 4,
-      "name": "Austin City Limits Music Festival",
-      "location": "Austin, Texas",
-      "dates": ["2023-10-06", "2023-10-07", "2023-10-08", "2023-10-09", "2023-10-14", "2023-10-15", "2023-10-16"],
-      "genres": ["rock", "pop", "electronic", "hip hop", "indie", "country"],
-      "brands": ["AT&T", "Amazon Music", "Mastercard"]
-    },
-    {
-      "id": 5,
-      "name": "Electric Daisy Carnival",
-      "location": "Las Vegas, Nevada",
-      "dates": ["2023-05-19", "2023-05-20", "2023-05-21"],
-      "genres": ["electronic", "dance"],
-      "brands": ["Insomniac Events", "Heineken", "T-Mobile"]
-    },
-    {
-      "id": 6,
-      "name": "Stagecoach Country Music Festival",
-      "location": "Indio, California",
-      "dates": ["2023-04-28", "2023-04-29", "2023-04-30"],
-      "genres": ["country"],
-      "brands": ["Anheuser-Busch", "Spotify", "Visa"]
-    }
-  ]
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/2F7B1dN/brand.png",
+    "name": "Brands",
+    "brands_info": [
+      {
+        "brand_name": "Artcell",
+        "best_album": "Onno Shomoy",
+        "born_details": {
+          "birth_year": 1999,
+          "birth_place": "Dhaka"
+        }
+      },
+      {
+        "brand_name": "Warfaze",
+        "best_album": "Poth Chola",
+        "born_details": {
+          "birth_year": 1984,
+          "birth_place": "Dhaka"
+        }
+      },
+      {
+        "brand_name": "Aurthohin",
+        "best_album": "Dhrubok",
+        "born_details": {
+          "birth_year": 1998,
+          "birth_place": "Dhaka"
+        }
+      },
+      {
+        "brand_name": "Miles",
+        "best_album": "Prottasha",
+        "born_details": {
+          "birth_year": 1979,
+          "birth_place": "Dhaka"
+        }
+      },
+      {
+        "brand_name": "LRB (Love Runs Blind)",
+        "best_album": "Ferari Mon",
+        "born_details": {
+          "birth_year": 1991,
+          "birth_place": "Dhaka"
+        }
+      },
+      {
+        "brand_name": "Bangla Five",
+        "best_album": "Shomoy Gele",
+        "born_details": {
+          "birth_year": 2000,
+          "birth_place": "Chittagong"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/W0Rp9k8/concerts.png",
+    "name": "Concerts",
+    "location": "Chicago, Illinois",
+    "dates": ["2023-08-04", "2023-08-05", "2023-08-06", "2023-08-07"],
+    "genres": ["rock", "pop", "electronic", "hip hop", "indie"],
+    "brands": ["Budweiser", "Apple Music", "Visa"]
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/TL2WXk1/writer.png",
+    "name": "Best Writer",
+    "location": "Pilton, Somerset, England",
+    "dates": [
+      "2023-06-21",
+      "2023-06-22",
+      "2023-06-23",
+      "2023-06-24",
+      "2023-06-25"
+    ],
+    "genres": ["rock", "pop", "electronic", "hip hop", "indie", "world music"],
+    "brands": ["Barclays", "BBC", "Oxfam"]
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/qph2QyB/vendors.png",
+    "name": "Vendors",
+    "location": "Austin, Texas",
+    "dates": [
+      "2023-10-06",
+      "2023-10-07",
+      "2023-10-08",
+      "2023-10-09",
+      "2023-10-14",
+      "2023-10-15",
+      "2023-10-16"
+    ],
+    "genres": ["rock", "pop", "electronic", "hip hop", "indie", "country"],
+    "brands": ["AT&T", "Amazon Music", "Mastercard"]
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/VMGsKjr/compuser.png",
+    "name": " lyricist and composer ",
+    "location": "Las Vegas, Nevada",
+    "dates": ["2023-05-19", "2023-05-20", "2023-05-21"],
+    "genres": ["electronic", "dance"],
+    "brands": ["Insomniac Events", "Heineken", "T-Mobile"]
+  },
+  {
+    "id": 6,
+    "img": "https://i.ibb.co/G7RQmxF/director.png",
+    "name": "Director",
+    "location": "Indio, California",
+    "dates": ["2023-04-28", "2023-04-29", "2023-04-30"],
+    "genres": ["country"],
+    "brands": ["Anheuser-Busch", "Spotify", "Visa"]
+  }
+]

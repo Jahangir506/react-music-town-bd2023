@@ -15,12 +15,12 @@ const Home = () => {
 
   return (
      <>
-       <div className="mt-12">
+       <div className="mt-24">
         <div>
           <h1 className="text-4xl text-center font-bold underline">
             Our Services
           </h1>
-          <div className="my-14 grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <div className="my-16 grid grid-cols-1 lg:grid-cols-3 gap-8">
             {
                 musicServiceCards.map(musicServiceCard => <MusicTownServices key={musicServiceCard.id} musicServiceCard={musicServiceCard}></MusicTownServices>)
             }
@@ -30,7 +30,7 @@ const Home = () => {
           <h1 className="text-4xl text-center font-bold underline">
             Enjoy Music
           </h1>
-          <div>
+          <div className="mt-6">
             <EnjoyPlayMusicAndLyrics></EnjoyPlayMusicAndLyrics>
           </div>
         </div>
