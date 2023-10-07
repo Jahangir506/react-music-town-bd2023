@@ -1,11 +1,18 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import PropTypes from "prop-types";
+import { useEffect } from "react";
 
 const MusicTownServices = ({ musicServiceCard }) => {
   const {name,brands_info, img} = musicServiceCard || {};
 
+  useEffect(()=> {
+    AOS.init({duration: 2000});
+  },[])
+
   return (
     <>
-      <div className="card">
+      <div className="card" data-aos ="zoom-in">
         <div>
           <figure>
             <img
