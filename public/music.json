@@ -1,10 +1,9 @@
 [
     {
       "id": 1,
-      "name": "Coachella Valley Music and Arts Festival",
-      "location": "Indio, California",
-      "dates": ["2023-04-14", "2023-04-15", "2023-04-16"],
-      "genres": ["rock", "pop", "electronic", "hip hop", "indie"],
+      "name": "Brands",
+      "location": "Bangladesh",
+      "top_Album": ["rock", "pop", "electronic", "hip hop", "indie"],
       "brands": ["Pepsi", "Spotify", "American Express"]
     },
     {

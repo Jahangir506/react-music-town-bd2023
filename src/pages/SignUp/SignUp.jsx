@@ -49,6 +49,9 @@ const SignUp = () => {
               </div>
               <div className="form-control mt-6">
                 <button className="btn btn-primary w-24 capitalize">Sign Up</button>
+                <div>
+                    
+                </div>
               </div>
             </form>
           </div>

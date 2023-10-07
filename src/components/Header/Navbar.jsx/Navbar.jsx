@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
+import logo from '../../../assets/images/logo.png';
 
 const Navbar = () => {
   const navLinks = (
@@ -105,16 +106,30 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/" className="normal-case text-xl">
-            Music Town
+            <img src={logo} alt="" className="w-60"/>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="gap-6 menu-horizontal px-1">{navLinks}</ul>
-          <label tabIndex={0} className="btn btn-ghost btn-circle avatar ml-12">
-            <div className="w-10 rounded-full">
-              <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-            </div>
-          </label>
+          <div className="dropdown dropdown-end">
+            <label
+              tabIndex={0}
+              className="btn btn-ghost btn-circle avatar ml-12"
+            >
+              <div className="w-10 rounded-full">
+                <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+              </div>
+            </label>
+            <ul
+              tabIndex={0}
+              className="menu dropdown-content z-[1] p-4 shadow bg-gray-500 rounded-box w-40 mt-4"
+            >
+              <div className="text-center">
+                <p className="mb-2">MD. Jahangir Alam</p>
+               <button className="py-1 px-3 bg-red-500 rounded">Log Out</button>
+              </div>
+            </ul>
+          </div>
         </div>
       </div>
     </>
