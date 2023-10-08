@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
-import signUp from "../../assets/images/signUp.png";
 import { useContext } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import registerImg from "../../assets/images/register.png";
 
-const SignUp = () => {
+
+const Register = () => {
   const {user, createUser} = useContext(AuthContext)
+  const location = useLocation()
+  const navigate = useNavigate()
 
       const handleRegister = (e) => {
         e.preventDefault();
@@ -17,6 +20,7 @@ const SignUp = () => {
         .then(result => {
           const registerUser = result.user;
           console.log(registerUser);
+          navigate(location?.state ? location.state: '/')
         })
         .catch(error => {
           console.error(error);
@@ -27,7 +31,7 @@ const SignUp = () => {
   return (
     <div className="mx-auto">
       <div className="hero absolute w-[720px] lg:bottom-48 ml-60 ">
-        <div className="hero-content w-full justify-between  shadow-2xl bg-base-100 rounded-md">
+        <div className="hero-content w-full justify-between flex-row-reverse  shadow-2xl bg-base-100 rounded-md">
           <div className="card flex-shrink-0  max-w-sm">
             <form onSubmit={handleRegister} className="card-body">
               <div className="form-control">
@@ -71,20 +75,22 @@ const SignUp = () => {
                   </a>
                 </label>
               </div>
-              <div className="form-control mt-6">
+              <div className="form-control mt-2">
                 <button className="btn btn-primary w-24 capitalize">
-                  Sign Up
+                  Register
                 </button>
-                <div></div>
+                <div className="mt-4">
+                  <h1>Or Register with</h1>
+                </div>
               </div>
             </form>
           </div>
           <div className="card flex-shrink-0  max-w-sm">
             <div>
-              <img src={signUp} alt="" className="w-full" />
+              <img src={registerImg} alt="" className="w-full" />
             </div>
-            <Link to="/login" className="underline text-center pb-5">
-              I am already member
+            <Link to="/login" className="underline text-center pb-5 text-blue-700">
+            Already have an account?
             </Link>
           </div>
         </div>
@@ -93,4 +99,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Register;

@@ -109,7 +109,7 @@ const Navbar = () => {
           <ul className="gap-6 menu-horizontal px-1">
             {navLinks}
             {user ? (
-              <button onClick={handleLogOut}>Sign Out</button>
+              <button onClick={handleLogOut}>Log Out</button>
             ) : (
               <li>
                 <NavLink

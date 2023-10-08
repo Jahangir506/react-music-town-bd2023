@@ -37,7 +37,7 @@ const Home = () => {
           <h1 className="text-4xl text-center font-bold underline">
             Enjoy Music
           </h1>
-          <div className="mt-6" data-aos="fade-up-left">
+          <div className="mt-6" data-aos="fade-right">
             <EnjoyPlayMusicAndLyrics></EnjoyPlayMusicAndLyrics>
           </div>
         </div>
