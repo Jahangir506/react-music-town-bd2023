@@ -12,7 +12,7 @@ const MainRoot = () => {
       <div className="max-w-6xl mx-auto">
         <Outlet></Outlet>
       </div>
-      <di>
+      {/* <di>
         <p className="text-center text-xl font-bold mb-3">🎼Trending Songs🎼</p>
           <Marquee speed={100} pauseOnHover>
            <p className="mr-4"><span className="text-lg text-red-600">Arfin Rumuy: </span> Tomar Cokh a Akash amar🎵</p>
@@ -22,7 +22,7 @@ const MainRoot = () => {
            <p className="mr-4"><span className="text-lg text-red-600">James: </span> Tomar Cokh a Akash amar🎵</p>
            <p className="mr-4"><span className="text-lg text-red-600">Arjit Sing: </span> Tomar Cokh a Akash amar🎵</p>
           </Marquee>
-        </di>
+        </di> */}
       <div>
         <Footer></Footer>
       </div>

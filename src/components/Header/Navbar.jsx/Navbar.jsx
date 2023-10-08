@@ -1,7 +1,17 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from '../../../assets/images/logo.png';
+import { AuthContext } from "../../../Providers/AuthProvider";
+import logo from "../../../assets/images/logo.png";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut =  () =>{
+      logOut()
+      .then()
+      .catch()
+  }
+
   const navLinks = (
     <>
       <li>
@@ -20,7 +30,7 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to="/service"
+          to="/serviceDetails"
           className={({ isActive, isPending }) =>
             isPending
               ? "pending"
@@ -60,20 +70,6 @@ const Navbar = () => {
           Lyrics
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          to="/login"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "active bg-green-500 py-1 px-4 rounded"
-              : "hover:text-green-500 hover:underline"
-          }
-        >
-          Login
-        </NavLink>
-      </li>
     </>
   );
 
@@ -106,11 +102,31 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/" className="normal-case text-xl">
-            <img src={logo} alt="" className="w-72"/>
+            <img src={logo} alt="" className="w-72" />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="gap-6 menu-horizontal px-1">{navLinks}</ul>
+          <ul className="gap-6 menu-horizontal px-1">
+            {navLinks}
+            {user ? (
+              <button onClick={handleLogOut}>Sign Out</button>
+            ) : (
+              <li>
+                <NavLink
+                  to="/login"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? "pending"
+                      : isActive
+                      ? "active bg-green-500 py-1 px-4 rounded"
+                      : "hover:text-green-500 hover:underline"
+                  }
+                >
+                  Login
+                </NavLink>
+              </li>
+            )}
+          </ul>
           <div className="dropdown dropdown-end">
             <label
               tabIndex={0}
@@ -126,7 +142,9 @@ const Navbar = () => {
             >
               <div className="text-center">
                 <p className="mb-2">MD. Jahangir Alam</p>
-               <button className="py-1 px-3 bg-red-500 rounded">Log Out</button>
+                <button className="py-1 px-3 bg-red-500 rounded">
+                  Log Out
+                </button>
               </div>
             </ul>
           </div>

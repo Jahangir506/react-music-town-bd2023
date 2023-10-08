@@ -1,19 +1,43 @@
-import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../Providers/AuthProvider';
 import loginIn from '../../assets/images/login.png';
 
-const login = () => {
+const Login = () => {
+  const {signIn} = useContext(AuthContext)
+  const location = useLocation()
+  const navigate = useNavigate()  
+
+  const handleLogin = e =>{
+        e.preventDefault()
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        console.log(email, password);
+
+        signIn(email, password)
+        .then(result => {
+          const loginUser = result.user;
+          console.log(loginUser);
+          navigate(location?.state ? location.state: '/')
+        })
+        .catch(error => {
+          console.error(error);
+        })
+  }
+
   return (
     <div className="mx-auto">
       <div className="hero absolute w-[720px] lg:bottom-48 ml-60 ">
         <div className="hero-content w-full flex-row-reverse justify-between  shadow-2xl bg-base-100 rounded-md">
           <div className="card flex-shrink-0  max-w-sm">
-            <form className="card-body">
+            <form onSubmit={handleLogin} className="card-body">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
                 </label>
                 <input
                   type="email"
+                  name="email"
                   placeholder="email"
                   className="input input-bordered"
                   required
@@ -25,6 +49,7 @@ const login = () => {
                 </label>
                 <input
                   type="password"
+                  name="password"
                   placeholder="password"
                   className="input input-bordered"
                   required
@@ -49,7 +74,7 @@ const login = () => {
             <div>
               <img src={loginIn} alt="" className="w-full" />
             </div>
-            <Link to="/signUp" className="underline text-center pb-10">
+            <Link to="/register" className="underline text-center pb-10">
               Create on account
             </Link>
           </div>
@@ -59,4 +84,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;

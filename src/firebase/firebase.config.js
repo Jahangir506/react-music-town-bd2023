@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyC5FGrY9qf7-CtLnCeOccTz-ilG7msnlzY",
-  authDomain: "music-town-bd2023.firebaseapp.com",
-  projectId: "music-town-bd2023",
-  storageBucket: "music-town-bd2023.appspot.com",
-  messagingSenderId: "131986511236",
-  appId: "1:131986511236:web:5830ea768cba71891b79d1"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase
