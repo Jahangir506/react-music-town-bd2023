@@ -2,10 +2,10 @@ import { createBrowserRouter } from "react-router-dom";
 import MainRoot from "../layouts/MainRoot";
 import ErrorPages from "../pages/ErrorPages/ErrorPages";
 import Home from "../pages/Home/Home";
-import Login from "../pages/Login/Login";
+import Login from "../pages/Login/login";
 import Register from "../pages/Register/Register";
-import ServiceDetails from "../pages/ServiceDetaitls/ServiceDetails";
-import PrivateRoute from "./private/PrivateRoute";
+import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
+import PrivateRoute from "./PrivateRoute";
 
 const CreateRoutes = createBrowserRouter([
     {
