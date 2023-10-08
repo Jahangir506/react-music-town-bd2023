@@ -1,12 +1,14 @@
 import { useContext } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { FaXTwitter } from "react-icons/fa6";
+import { FcGoogle } from "react-icons/fc";
+import { HiArrowSmallRight } from "react-icons/hi2";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import registerImg from "../../assets/images/register.png";
 
 
 const Register = () => {
-  const {user, createUser} = useContext(AuthContext)
-  const location = useLocation()
+  const {user, createUser, googleSignIn} = useContext(AuthContext)
   const navigate = useNavigate()
 
       const handleRegister = (e) => {
@@ -20,15 +22,27 @@ const Register = () => {
         .then(result => {
           const registerUser = result.user;
           console.log(registerUser);
-          navigate(location?.state ? location.state: '/')
+          navigate('/')
+        })
+        .catch(error => {
+          console.error(error);
+        })  
+      };
+      
+      const handleGoogleSignIn = () =>{
+        googleSignIn()
+        .then(result =>{
+          const googleUser = result.user;
+          console.log(googleUser);
+          navigate('/')
         })
         .catch(error => {
           console.error(error);
         })
-        
-      };
-
-  return (
+      }
+      
+      
+      return (
     <div className="mx-auto">
       <div className="hero absolute w-[720px] lg:bottom-48 ml-60 ">
         <div className="hero-content w-full justify-between flex-row-reverse  shadow-2xl bg-base-100 rounded-md">
@@ -79,8 +93,17 @@ const Register = () => {
                 <button className="btn btn-primary w-24 capitalize">
                   Register
                 </button>
-                <div className="mt-4">
-                  <h1>Or Register with</h1>
+                <div className="mt-4 ml-1">
+                  <span className="text-md flex items-center">
+                    <span className="mr-1">Or login with</span>
+                    <HiArrowSmallRight/>
+                    <Link className="mr-3 ml-4">
+                      <FaXTwitter className="text-2xl"/>
+                    </Link>
+                    <Link onClick={handleGoogleSignIn}>
+                      <FcGoogle className="text-2xl"/>
+                    </Link>
+                  </span>
                 </div>
               </div>
             </form>

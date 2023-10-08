@@ -1,16 +1,19 @@
 import { useContext } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Providers/AuthProvider";
 import logo from "../../../assets/images/logo.png";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+  const navigate = useNavigate()
 
-  const handleLogOut =  () =>{
-      logOut()
-      .then()
-      .catch()
-  }
+  const handleLogOut = () => {
+    logOut()
+    .then(()=>{
+      navigate('/')
+    })
+    .catch();
+  };
 
   const navLinks = (
     <>
@@ -21,8 +24,8 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "active bg-green-500 py-1 px-4 rounded"
-              : "hover:text-green-500 hover:underline"
+              ? "active hover:bg-white/30  backdrop-brightness-75 py-2 px-3 rounded text-center"
+              : "hover:bg-white/30  backdrop-brightness-75 py-2 px-3 rounded text-center"
           }
         >
           Home
@@ -35,41 +38,45 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "active bg-green-500 py-1 px-4 rounded"
-              : "hover:text-green-500 hover:underline"
+              ? "active bg-white/30  backdrop-brightness-75 py-2 px-3 rounded text-center"
+              : "hover:bg-white/30  backdrop-brightness-75 py-2 px-3 rounded"
           }
         >
           Service
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          to="/playSongs"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "active bg-green-500 py-1 px-4 rounded"
-              : "hover:text-green-500 hover:underline"
-          }
-        >
-          Play Songs
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to="/lyrics"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "active bg-green-500 py-1 px-4 rounded"
-              : "hover:text-green-500 hover:underline"
-          }
-        >
-          Lyrics
-        </NavLink>
-      </li>
+      {user && (
+        <>
+          <li>
+            <NavLink
+              to="/playSongs"
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "pending"
+                  : isActive
+                  ? "active bg-white/30  backdrop-brightness-75 py-2 px-3 rounded text-center"
+                  : "hover:bg-white/30  backdrop-brightness-75 py-2 px-3 rounded"
+              }
+            >
+              Play Songs
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/lyrics"
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "pending"
+                  : isActive
+                  ? "active bg-white/30  backdrop-brightness-75 py-2 px-3 rounded text-center"
+                  : "hover:bg-white/30  backdrop-brightness-75 py-2 px-3 rounded"
+              }
+            >
+              Lyrics
+            </NavLink>
+          </li>
+        </>
+      )}
     </>
   );
 
@@ -109,7 +116,20 @@ const Navbar = () => {
           <ul className="gap-6 menu-horizontal px-1">
             {navLinks}
             {user ? (
-              <button onClick={handleLogOut}>Log Out</button>
+              <li onClick={handleLogOut}>
+                <NavLink
+                  to="/login"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? "pending"
+                      : isActive
+                      ? "active"
+                      : "bg-white/5 hover:bg-white/30  backdrop-brightness-75 py-2 px-3 rounded text-center"
+                  }
+                >
+                  Log Out
+                </NavLink>
+              </li>
             ) : (
               <li>
                 <NavLink
@@ -118,8 +138,8 @@ const Navbar = () => {
                     isPending
                       ? "pending"
                       : isActive
-                      ? "active bg-green-500 py-1 px-4 rounded"
-                      : "hover:text-green-500 hover:underline"
+                      ? "active hover:bg-white/30 backdrop-brightness-75 py-1 px-4 rounded"
+                      : "hover:bg-white/30  backdrop-brightness-75 py-1 px-4 rounded"
                   }
                 >
                   Login
@@ -127,27 +147,29 @@ const Navbar = () => {
               </li>
             )}
           </ul>
-          <div className="dropdown dropdown-end">
-            <label
-              tabIndex={0}
-              className="btn btn-ghost btn-circle avatar ml-12"
-            >
-              <div className="w-10 rounded-full">
-                <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-              </div>
-            </label>
-            <ul
-              tabIndex={0}
-              className="menu dropdown-content z-[1] p-4 shadow bg-gray-500 rounded-box w-40 mt-4"
-            >
-              <div className="text-center">
-                <p className="mb-2">MD. Jahangir Alam</p>
-                <button className="py-1 px-3 bg-red-500 rounded">
-                  Log Out
-                </button>
-              </div>
-            </ul>
-          </div>
+          {user && (
+            <div className="dropdown dropdown-end">
+              <label
+                tabIndex={0}
+                className="btn btn-ghost btn-circle avatar ml-12"
+              >
+                <div className="w-10 rounded-full">
+                  <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                </div>
+              </label>
+              <ul
+                tabIndex={0}
+                className="menu dropdown-content z-[1] p-4 shadow bg-gray-500 rounded-box w-40 mt-4"
+              >
+                <div className="text-center">
+                  <p className="mb-2">MD. Jahangir Alam</p>
+                  <button className="py-1 px-3 bg-red-500 rounded">
+                    Log Out
+                  </button>
+                </div>
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </>

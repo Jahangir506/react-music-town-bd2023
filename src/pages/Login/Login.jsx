@@ -1,10 +1,13 @@
 import { useContext } from "react";
+import { FaXTwitter } from "react-icons/fa6";
+import { FcGoogle } from "react-icons/fc";
+import { HiArrowSmallRight } from "react-icons/hi2";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import loginIn from "../../assets/images/login.png";
 
 const Login = () => {
-  const { signIn } = useContext(AuthContext);
+  const { signIn, googleSignIn } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -24,6 +27,18 @@ const Login = () => {
         console.error(error);
       });
   };
+
+  const handleGoogleSignIn = () =>{
+    googleSignIn()
+    .then(result =>{
+      const googleUser = result.user;
+      console.log(googleUser);
+      navigate('/')
+    })
+    .catch(error => {
+      console.error(error);
+    })
+  }
 
   return (
     <div className="mx-auto">
@@ -65,8 +80,16 @@ const Login = () => {
                   Login
                 </button>
                 <div className="mt-4 ml-1">
-                  <p>Or login with</p>
-                  <FaXTwitter/>
+                  <span className="text-md flex items-center">
+                    <span className="mr-1">Or login with</span>
+                    <HiArrowSmallRight/>
+                    <Link className="mr-3 ml-4">
+                      <FaXTwitter className="text-2xl"/>
+                    </Link>
+                    <Link onClick={handleGoogleSignIn}>
+                      <FcGoogle className="text-2xl"/>
+                    </Link>
+                  </span>
                 </div>
               </div>
             </form>

@@ -22,6 +22,14 @@ const CreateRoutes = createBrowserRouter([
                 element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>
             },
             {
+                path: '/playSongs',
+                element: <PrivateRoute></PrivateRoute>
+            },
+            {
+                path: '/lyrics',
+                element: <PrivateRoute></PrivateRoute>
+            },
+            {
                 path: '/login',
                 element: <Login></Login>
             },
