@@ -56,7 +56,7 @@ const Register = () => {
       })
       .catch((error) => {
         console.error(error.message);
-        setRegisterError("Email is incorrect for this password!")
+        setRegisterError("Email is already Use!")
       });
   };
 
@@ -73,7 +73,7 @@ const Register = () => {
       })
       .catch((error) => {
         console.error(error.message);
-        setRegisterError("Email is incorrect for this password!")
+        setRegisterError("Email is already Use!")
       });
   };
 

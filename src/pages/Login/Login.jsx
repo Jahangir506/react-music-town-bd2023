@@ -73,6 +73,7 @@ const Login = () => {
       })
       .catch((error) => {
         console.error(error);
+        setLoginError("Email is already Use!")
       });
   };
 
