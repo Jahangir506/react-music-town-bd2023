@@ -5,63 +5,57 @@ import { FcGoogle } from "react-icons/fc";
 import { HiArrowSmallRight } from "react-icons/hi2";
 import { Link, useNavigate } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
-import Swal from 'sweetalert2';
+import Swal from "sweetalert2";
 import { AuthContext } from "../../Providers/AuthProvider";
 import registerImg from "../../assets/images/register.png";
 
 const Register = () => {
   const { createUser, googleSignIn } = useContext(AuthContext);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [showPass, setShowPass] = useState(false);
-
 
   const handleRegister = (e) => {
     e.preventDefault();
     const name = e.target.email.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
-    console.log(name, email, password);
 
     if (password.length < 6) {
       Swal.fire({
-          title: 'Password should be at least 6 characters long.!',
-          icon: 'error',
-        })
+        title: "Password should be at least 6 characters long.!",
+        icon: "error",
+      });
       return;
-  }
+    }
 
-  if (!/[A-Z]/.test(password)) {
+    if (!/[A-Z]/.test(password)) {
       Swal.fire({
-          title: 'Password should contain at least one uppercase character.!',
-          icon: 'error',
-        })
+        title: "Password should contain at least one uppercase character.!",
+        icon: "error",
+      });
       return;
-  }
+    }
 
-  if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+    if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
       Swal.fire({
-          title: 'Password should contain at least one special character.!',
-          icon: 'error',
-        })
+        title: "Password should contain at least one special character.!",
+        icon: "error",
+      });
       return;
-  }
+    }
 
     createUser(email, password)
       .then((result) => {
         const registerUser = result.user;
         console.log(registerUser);
         Swal.fire({
-          title: 'User Create Successfully.!',
-          icon: 'success',
-        })
-        navigate('/')
+          title: "User Create Successfully.!",
+          icon: "success",
+        });
+        navigate("/");
       })
-      .catch(() => {
-        Swal.fire({
-          title: 'Wrong email or password. Try again or create an account.!',
-          icon: 'error',
-        })
-        navigate('/')
+      .catch((error) => {
+        console.error(error.message);
       });
   };
 
@@ -71,12 +65,13 @@ const Register = () => {
         const googleUser = result.user;
         console.log(googleUser);
         Swal.fire({
-          title: 'User Create Successfully.!',
-          icon: 'success',
-        })
+          title: "User Create Successfully",
+          icon: "success",
+        });
+        navigate(location?.state ? location.state : "/");
       })
-      .catch(() => {
-      
+      .catch((error) => {
+        console.error(error.message);
       });
   };
 
@@ -146,10 +141,7 @@ const Register = () => {
                 </label>
               </div>
               <div className="form-control mt-2">
-                <button
-                 
-                  className="btn btn-primary w-24 capitalize"
-                >
+                <button className="btn btn-primary w-24 capitalize">
                   Register
                 </button>
                 <div className="mt-4 ml-1">

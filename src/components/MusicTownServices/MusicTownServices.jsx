@@ -13,7 +13,10 @@ const MusicTownServices = ({ musicServiceCard }) => {
 
   return (
     <>
-      <div className="card w-80 shadow-2xl rounded-t-md rounded-b-md" data-aos="flip-up">
+      <div
+        className="card w-80 shadow-2xl rounded-t-md rounded-b-md"
+        data-aos="fade-up"
+      >
         <figure>
           <img src={img} alt="Shoes" />
         </figure>

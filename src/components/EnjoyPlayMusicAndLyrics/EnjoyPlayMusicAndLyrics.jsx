@@ -10,11 +10,9 @@ import "swiper/css/pagination";
 import "../../App.css";
 
 // import required modules
-import { useState } from "react";
 import { EffectCoverflow } from "swiper/modules";
 
 const EnjoyPlayMusicAndLyrics = () => {
-  const [hidden, setHidden] = useState(false)
   return (
     <div>
       <Swiper
@@ -40,31 +38,94 @@ const EnjoyPlayMusicAndLyrics = () => {
               alt="image 1"
               className="h-full w-full object-cover"
             />
-            <div className="absolute inset-0 grid h-full w-full place-items-center text-2xl hover:bg-black/75">
+            <div className="absolute inset-0 grid h-full w-full place-items-center text-2xl bg-black/75">
               <FaPlayCircle className="text-white text-4xl"/>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        <div className="relative h-full w-full">
+            <img
+              src="https://swiperjs.com/demos/images/nature-2.jpg" 
+              alt="image 1"
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 grid h-full w-full place-items-center text-2xl bg-black/75">
+              <FaPlayCircle className="text-white text-4xl"/>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        <div className="relative h-full w-full">
+            <img
+             src="https://swiperjs.com/demos/images/nature-3.jpg"
+              alt="image 1"
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 grid h-full w-full place-items-center text-2xl bg-black/75">
+              <FaPlayCircle className="text-white text-4xl"/>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        <div className="relative h-full w-full">
+            <img
+            src="https://swiperjs.com/demos/images/nature-4.jpg" 
+              alt="image 1"
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 grid h-full w-full place-items-center text-2xl bg-black/75">
+              <FaPlayCircle className="text-white text-4xl"/>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+        <div className="relative h-full w-full">
+            <img
+            src="https://swiperjs.com/demos/images/nature-5.jpg"
+              alt="image 1"
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 grid h-full w-full place-items-center text-2xl bg-black/75">
+              <FaPlayCircle className="text-white text-4xl"/>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+        <div className="relative h-full w-full">
+            <img
+             src="https://swiperjs.com/demos/images/nature-6.jpg"
+              alt="image 1"
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 grid h-full w-full place-items-center text-2xl bg-black/75">
+              <FaPlayCircle className="text-white text-4xl"/>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+        <div className="relative h-full w-full">
+            <img
+             src="https://swiperjs.com/demos/images/nature-7.jpg"
+              alt="image 1"
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 grid h-full w-full place-items-center text-2xl bg-black/75">
+              <FaPlayCircle className="text-white text-4xl"/>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+        <div className="relative h-full w-full">
+            <img
+             src="https://swiperjs.com/demos/images/nature-8.jpg"
+              alt="image 1"
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 grid h-full w-full place-items-center text-2xl bg-black/75">
+              <FaPlayCircle className="text-white text-4xl"/>
+            </div>
+          </div>
         </SwiperSlide>
       </Swiper>
     </div>
