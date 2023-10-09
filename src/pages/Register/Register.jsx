@@ -3,14 +3,15 @@ import { FaEye } from "react-icons/fa";
 import { FaEyeSlash, FaXTwitter } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
 import { HiArrowSmallRight } from "react-icons/hi2";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 import Swal from 'sweetalert2';
 import { AuthContext } from "../../Providers/AuthProvider";
 import registerImg from "../../assets/images/register.png";
 
 const Register = () => {
-  const { user, createUser, googleSignIn } = useContext(AuthContext);
+  const { createUser, googleSignIn } = useContext(AuthContext);
+  const navigate = useNavigate()
   const [showPass, setShowPass] = useState(false);
 
 
@@ -53,13 +54,14 @@ const Register = () => {
           title: 'User Create Successfully.!',
           icon: 'success',
         })
-        return
+        navigate('/')
       })
       .catch(() => {
         Swal.fire({
           title: 'Wrong email or password. Try again or create an account.!',
           icon: 'error',
         })
+        navigate('/')
       });
   };
 
@@ -68,8 +70,13 @@ const Register = () => {
       .then((result) => {
         const googleUser = result.user;
         console.log(googleUser);
+        Swal.fire({
+          title: 'User Create Successfully.!',
+          icon: 'success',
+        })
       })
       .catch(() => {
+      
       });
   };
 

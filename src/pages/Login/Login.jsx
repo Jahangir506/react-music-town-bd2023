@@ -57,10 +57,7 @@ const Login = () => {
       })
       .catch((error) => {
         console.error(error);
-        Swal.fire({
-          title: 'Wrong email or password. Try again or create an account.!',
-          icon: 'error',
-        })
+       
       });
   };
 
@@ -77,10 +74,7 @@ const Login = () => {
       })
       .catch((error) => {
         console.error(error);
-        Swal.fire({
-          title: 'Wrong email or password. Try again or create an account.!',
-          icon: 'error',
-        })
+       
       });
   };
 
