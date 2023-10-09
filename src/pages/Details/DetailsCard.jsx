@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const DetailsCard = ({detail}) => {
         const {name, price, img, description} = detail || {};
         console.log(detail);
@@ -11,10 +13,10 @@ const DetailsCard = ({detail}) => {
           <div className="w-full">
             <div className="card-body  text-white">
               <h2 className="card-title text-center">{name}</h2>
-              <p>Description:
-               {description}
-              </p>
-              <p>Price: {price}</p>
+              <div><span className="text-base font-semibold">Description: </span>
+             <span className="opacity-75">{description}</span>
+              </div>
+              <p><span className="text-base font-semibold">Price:</span><span className="opacity-75"> {price}</span></p>
             </div>
             <div className="card-actions  justify-end">
               <button className="py-4 w-full rounded-b-md  bg-white/10 hover:bg-white/30 text-white text-lg">
@@ -27,5 +29,9 @@ const DetailsCard = ({detail}) => {
     </>
   );
 };
+
+DetailsCard.propTypes = {
+  detail: PropTypes.array.isRequired
+}
 
 export default DetailsCard;

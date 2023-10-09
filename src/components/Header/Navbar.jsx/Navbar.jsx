@@ -63,7 +63,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/lyrics"
+              to="/details"
               className={({ isActive, isPending }) =>
                 isPending
                   ? "pending"
@@ -72,7 +72,7 @@ const Navbar = () => {
                   : "hover:bg-white/30  backdrop-brightness-75 py-2 px-3 rounded"
               }
             >
-              Lyrics
+              Details
             </NavLink>
           </li>
         </>

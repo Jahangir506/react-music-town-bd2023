@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const MusicTownServices = ({ musicServiceCard }) => {
-  const { id, name, brands_info, img } = musicServiceCard || {};
+  const { id, name, img } = musicServiceCard || {};
 
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -42,7 +42,7 @@ const MusicTownServices = ({ musicServiceCard }) => {
 };
 
 MusicTownServices.propTypes = {
-  musicServiceCard: PropTypes.array.isRequired,
+  musicServiceCard: PropTypes.object.isRequired,
 };
 
 export default MusicTownServices;

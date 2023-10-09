@@ -3,7 +3,7 @@ import MainRoot from "../layouts/MainRoot";
 import Details from "../pages/Details/Details";
 import ErrorPages from "../pages/ErrorPages/ErrorPages";
 import Home from "../pages/Home/Home";
-import Login from "../pages/Login/login";
+import Login from '../pages/Login/Login';
 import Register from "../pages/Register/Register";
 import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
 import PrivateRoute from "./PrivateRoute";
@@ -26,10 +26,6 @@ const CreateRoutes = createBrowserRouter([
                 path: '/details/:id',
                 element: <PrivateRoute><Details></Details></PrivateRoute>,
                 loader: () => fetch('/music.json')
-            },
-            {
-                path: '/lyrics',
-                element: <PrivateRoute></PrivateRoute>
             },
             {
                 path: '/login',

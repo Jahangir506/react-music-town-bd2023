@@ -1,5 +1,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
+import PropTypes from "prop-types";
 import { useEffect } from "react";
 
 const Latest = ({ latest }) => {
@@ -25,5 +26,9 @@ const Latest = ({ latest }) => {
     </div>
   );
 };
+
+Latest.propTypes = {
+    latest: PropTypes.object.isRequired
+}
 
 export default Latest;

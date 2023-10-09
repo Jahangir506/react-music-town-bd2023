@@ -5,22 +5,25 @@
     "title": "Online Performance Featuring With Rich Brian",
     "track": "Jakarta Music Fest",
     "date": "21",
-    "location": "Jakarta"
+    "location": "Jakarta",
+    "time": "11:00 pm"
   },
   {
     "id": 2,
     "img": "https://i.ibb.co/94Z64JN/2.png",
     "title": "Online Performance Featuring With Rich Brian",
     "track": "Jakarta Music Fest",
-    "date": "21",
-    "location": "Jakarta"
+    "date": "08",
+    "location": "Bali",
+    "time": "7:00 pm"
   },
   {
     "id": 3,
     "img": "https://i.ibb.co/FX2TNbD/3.png",
     "title": "Online Performance Featuring With Rich Brian",
     "track": "Jakarta Music Fest",
-    "date": "21",
-    "location": "Jakarta"
+    "date": "15",
+    "location": "Medan",
+    "time": "9:00 pm"
   }
 ]

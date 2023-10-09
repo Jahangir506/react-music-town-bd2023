@@ -7,6 +7,7 @@ import Footer from "../../components/Footer/Footer";
 import Latest from "../../components/Latest/Latest";
 import MusicTownServices from "../../components/MusicTownServices/MusicTownServices";
 import UpcomingShow from "../../components/UpcomingShow/UpcomingShow";
+import Marquee from "react-fast-marquee";
 
 const Home = () => {
   const [musicServiceCards, setMusicServiceCards] = useState([]);
@@ -31,7 +32,9 @@ const Home = () => {
   return (
     <>
       <div>
-        <EnjoyPlayMusicAndLyrics></EnjoyPlayMusicAndLyrics>
+        <Marquee>
+          <EnjoyPlayMusicAndLyrics></EnjoyPlayMusicAndLyrics>
+        </Marquee>
       </div>
       <div className="max-w-6xl mx-auto">
         <div className="my-16">
@@ -65,11 +68,15 @@ const Home = () => {
           </div>
         </div>
         <div className="my-20">
-        <div>
-            <h4 className="text-center text-lg text-red-600 font-semibold">LIVE CONCERT</h4>
-            <h1 className="text-center text-5xl mt-2 text-white font-bold">Upcoming Shows</h1>
-        </div>
-          <div className="my-16">
+          <div>
+            <h4 className="text-center text-lg text-red-600 font-semibold">
+              LIVE CONCERT
+            </h4>
+            <h1 className="text-center text-5xl mt-2 text-white font-bold">
+              Upcoming Shows
+            </h1>
+          </div>
+          <div className="my-4">
             {latestMusic.map((latestShow) => (
               <UpcomingShow
                 key={latestShow.id}
