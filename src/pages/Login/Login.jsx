@@ -22,7 +22,7 @@ const Login = () => {
 
     if (password.length < 6) {
       Swal.fire({
-        title: "Password should be at least 6 characters long.!",
+        title: "you have to enter at least 6 digit!",
         icon: "error",
       });
       return;

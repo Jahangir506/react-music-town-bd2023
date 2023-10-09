@@ -11,6 +11,7 @@ import registerImg from "../../assets/images/register.png";
 
 const Register = () => {
   const { createUser, googleSignIn } = useContext(AuthContext);
+  const [registerError, setRegisterError] = useState("");
   const navigate = useNavigate();
   const [showPass, setShowPass] = useState(false);
 
@@ -21,7 +22,7 @@ const Register = () => {
 
     if (password.length < 6) {
       Swal.fire({
-        title: "Password should be at least 6 characters long.!",
+        title: "you have to enter at least 6 digit!",
         icon: "error",
       });
       return;
@@ -55,6 +56,7 @@ const Register = () => {
       })
       .catch((error) => {
         console.error(error.message);
+        setRegisterError("Email is incorrect for this password!")
       });
   };
 
@@ -71,6 +73,7 @@ const Register = () => {
       })
       .catch((error) => {
         console.error(error.message);
+        setRegisterError("Email is incorrect for this password!")
       });
   };
 
@@ -80,6 +83,11 @@ const Register = () => {
         <div className="hero-content w-full justify-between flex-row-reverse  shadow-2xl bg-base-100 rounded-md">
           <div className="card flex-shrink-0  max-w-sm">
             <form onSubmit={handleRegister} className="card-body">
+            {registerError && (
+                  <div className="py-3 bg-red-50 px-2 rounded">
+                    <p className="text-red-500">{registerError}</p>
+                  </div>
+                )}
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Name</span>
