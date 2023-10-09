@@ -1,9 +1,14 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Event Management
 
-Currently, two official plugins are available:
+### Live Site : https://music-town-bd2023.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# b8a9-event-management-Jahangir506
+### Code Link : https://github.com/programming-hero-web-course-4/b8a9-
+## Added 5 Projects Features
+
+- Doing this project with music event management
+- Here, 6 services project, brand, concerts, vendors, director, writer, composer have been discussed in detail.
+- tailwind, react, react router dom, firebase these are used
+- Various concert shows can be booked from this website
+- This website will be of great help to those who work with music and love music.
+
