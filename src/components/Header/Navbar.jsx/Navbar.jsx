@@ -5,14 +5,14 @@ import logo from "../../../assets/images/logo.png";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handleLogOut = () => {
     logOut()
-    .then(()=>{
-      navigate('/')
-    })
-    .catch();
+      .then(() => {
+        navigate("/");
+      })
+      .catch();
   };
 
   const navLinks = (
@@ -82,7 +82,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar justify-between text-white py-10">
+      <div className="navbar justify-evenly text-white py-10 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -154,18 +154,15 @@ const Navbar = () => {
                 className="btn btn-ghost btn-circle avatar ml-12"
               >
                 <div className="w-10 rounded-full">
-                  <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                  {user && <img src={user?.photoURL} />}
                 </div>
               </label>
               <ul
                 tabIndex={0}
-                className="menu dropdown-content z-[1] p-4 shadow bg-gray-500 rounded-box w-40 mt-4"
+                className="menu dropdown-content z-[1] p-4 shadow backdrop-brightness-5 rounded-box w-40 mt-4"
               >
                 <div className="text-center">
-                  <p className="mb-2">MD. Jahangir Alam</p>
-                  <button className="py-1 px-3 bg-red-500 rounded">
-                    Log Out
-                  </button>
+                  {user && <p>{user?.displayName}</p>}
                 </div>
               </ul>
             </div>

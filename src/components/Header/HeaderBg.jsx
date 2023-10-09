@@ -4,9 +4,9 @@ import Navbar from "./Navbar.jsx/Navbar";
 const HeaderBg = () => {
   return (
     <>
-      <div className="relative w-full h-full">
+      <div className="relative w-full">
         <div>
-          <img src={bgNav} alt="image 1" className="w-full h-[600px]" />
+          <img src={bgNav} alt="image 1" className="w-full" />
         </div>
         <div className="absolute inset-0 w-full place-items-center bg-black/60">
           <div className="max-w-6xl mx-auto">

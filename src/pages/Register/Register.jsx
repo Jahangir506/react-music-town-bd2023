@@ -64,8 +64,8 @@ const Register = () => {
   };
 
   return (
-    <div className="mx-auto">
-      <div className="hero absolute w-[720px] lg:bottom-48 ml-60 ">
+    <div className="flex  justify-center items-center mt-32">
+      <div className="hero w-[720px]">
         <div className="hero-content w-full justify-between flex-row-reverse  shadow-2xl bg-base-100 rounded-md">
           <div className="card flex-shrink-0  max-w-sm">
             <form onSubmit={handleRegister} className="card-body">
