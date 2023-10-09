@@ -3,130 +3,42 @@
     "id": 1,
     "img": "https://i.ibb.co/2F7B1dN/brand.png",
     "name": "Brands",
-    "brands_info": [
-      {
-        "name": "BanglaTunes Instruments",
-        "price": 1500,
-        "description": "Welcome to the world of BanglaTunes Instruments, where music meets craftsmanship and innovation. As one of Bangladesh's premier music instrument brands, we are committed to creating instruments that inspire musicians to reach new heights in their musical journey.At BanglaTunes Instruments, we take great pride in our dedication to quality and excellence. Our range of instruments covers everything from guitars and drums to keyboards and amplifiers, designed to cater to musicians of all levels.Our team of skilled artisans and engineers ensures that every instrument is crafted with precision and care. We use the finest materials and components to create instruments that produce exceptional sound quality and durability.From the soulful strains of acoustic guitars to the powerful beats of our percussion instruments, BanglaTunes Instruments offers a diverse selection to suit various musical styles and preferences.Our instruments are priced starting at $100 and can go up to $1500, making them accessible to aspiring musicians, seasoned professionals, and everyone in between. Join the BanglaTunes Instruments community and experience the joy of creating music with instruments that are as unique as your musical journey."
-      },
-      {
-        "name": "DhakaSound Pro Audio",
-        "price": 2000,
-        "description": "Discover the world of professional audio excellence with DhakaSound Pro Audio. We are dedicated to providing high-quality audio equipment and solutions for musicians, recording artists, and sound engineers across Bangladesh.Our extensive range of pro audio equipment includes microphones, audio interfaces, studio monitors, and more. We understand the importance of pristine sound quality in music production and live performances, and our products are designed to meet and exceed your expectations.At DhakaSound, we prioritize performance, reliability, and affordability. Whether you're setting up a home recording studio or outfitting a professional music production facility, our pro audio gear has you covered.Our products are priced starting at $50 and can go up to $2000, ensuring that musicians and audio professionals can access the tools they need to achieve sonic excellence.Join the DhakaSound community and elevate your audio experience with professional-grade equipment that captures the true essence of your music."
-      },
-      {
-        "name": "SylhetSonic Music Accessories",
-        "price": 200,
-        "description": "SylhetSonic Music Accessories is your trusted partner for high-quality music accessories in Bangladesh. We specialize in providing musicians with a wide range of essential accessories that enhance their musical experience.Our product lineup includes guitar strings, drumsticks, instrument cables, cases, and more. We understand that attention to detail matters in music, and our accessories are designed to meet the demands of professional musicians and enthusiasts alike.At SylhetSonic, we focus on quality, affordability, and reliability. Our accessories are priced starting at just $10 and can go up to $200, making them accessible to musicians at all levels.Whether you're a guitarist, drummer, keyboardist, or vocalist, our accessories are designed to complement your musical journey. Join the SylhetSonic community and discover the difference that quality accessories can make in your music."
-      },
-      {
-        "name": "BanglaBeats Percussion",
-        "price": 500,
-        "description": "BanglaBeats Percussion invites you to experience the world of rhythmic brilliance through our range of percussion instruments. We are dedicated to crafting exceptional percussion instruments that capture the essence of Bangladeshi music and beyond.Our product lineup includes traditional Bangladeshi drums, hand percussion, and global percussion favorites. Each instrument is meticulously crafted to produce authentic and resonant rhythms that connect with the soul of music.At BanglaBeats, we combine tradition with innovation. Our percussion instruments are known for their craftsmanship, durability, and affordability. With prices ranging from $30 to $500, we ensure that musicians and percussion enthusiasts can access instruments that elevate their rhythmic expression.Join the BanglaBeats community and embark on a rhythmic journey that celebrates the cultural heritage of percussion. Feel the heartbeat of music through our finely crafted instruments."
-      },
-      {
-        "name": "ChittagongChords Musical Electronics",
-        "price": 1200,
-        "description": "ChittagongChords Musical Electronics is your gateway to cutting-edge musical electronics in Bangladesh. We specialize in designing and manufacturing electronic instruments and equipment that push the boundaries of musical creativity.Our product range includes synthesizers, electronic drums, effects processors, and more. Whether you're a synth enthusiast, electronic music producer, or live performer, ChittagongChords offers a wide array of electronic instruments that inspire innovation.At ChittagongChords, we are driven by innovation and sonic exploration. Our electronic instruments are designed to provide musicians with the tools they need to create unique sounds and textures.Our products are priced starting at $50 and can go up to $1200, ensuring that musicians at all levels can access the world of electronic music. Join the ChittagongChords community and immerse yourself in the realm of electronic sonic possibilities."
-      },
-      {
-        "name": "RajshahiResonance Wind Instruments",
-        "price": 600,
-        "description": "RajshahiResonance Wind Instruments, where the winds carry the melodies of tradition. We take pride in crafting wind instruments that connect musicians with the timeless beauty of wind music. Our instruments are inspired by the rich heritage of Bangladesh and beyond.Our master craftsmen meticulously create wind instruments that produce enchanting melodies. From flutes and harmonicas to traditional Bangladeshi wind instruments, RajshahiResonance offers a wide selection for musicians and enthusiasts.Discover the art of wind music, where breath and melody unite. Our wind instruments are priced starting at $100 and can go up to $600, ensuring that anyone with a passion for wind music can access instruments that inspire musical exploration.Join the winds of RajshahiResonance and embark on a melodic journey that transcends time and tradition. Let your music take flight with the grace and resonance of wind instruments that echo the beauty of Bangladesh's musical heritage."
-      }
-    ]
+    "price": 1500,
+    "description": "Welcome to the world of BanglaTunes Instruments, where music meets craftsmanship and innovation. As one of Bangladesh's premier music instrument brands, we are committed to creating instruments that inspire musicians to reach new heights in their musical journey.At BanglaTunes Instruments, we take great pride in our dedication to quality and excellence. Our range of instruments covers everything from guitars and drums to keyboards and amplifiers, designed to cater to musicians of all levels.Our team of skilled artisans and engineers ensures that every instrument is crafted with precision and care. We use the finest materials and components to create instruments that produce exceptional sound quality and durability.From the soulful strains of acoustic guitars to the powerful beats of our percussion instruments, BanglaTunes Instruments offers a diverse selection to suit various musical styles and preferences.Our instruments are priced starting at $100 and can go up to $1500, making them accessible to aspiring musicians, seasoned professionals, and everyone in between. Join the BanglaTunes Instruments community and experience the joy of creating music with instruments that are as unique as your musical journey."
   },
   {
     "id": 2,
     "img": "https://i.ibb.co/W0Rp9k8/concerts.png",
     "name": "Concerts and Festival",
-    "Details": [
-      {
-        "name": "Dhaka Music Festival",
-        "image": "https://example.com/dhakamusicfest.jpg",
-        "price": "$49.99",
-        "description": "Experience the rich musical heritage of Bangladesh at the Dhaka Music Festival. This annual extravaganza showcases the country's diverse music genres, from classical and folk to contemporary and fusion. Held in the heart of Dhaka, the festival features renowned artists and emerging talents, making it a must-attend event for music enthusiasts.Join thousands of music lovers in celebrating the cultural tapestry of Bangladesh through melodious tunes and rhythmic beats. Explore stalls offering local cuisine, handicrafts, and traditional instruments. The festival not only entertains but also educates, with workshops and panel discussions on the history and evolution of Bangladeshi music.The Dhaka Music Festival provides a platform for artists from various regions to collaborate and create unique performances that bridge generations and genres. Immerse yourself in the melodies that have shaped Bangladeshi culture, from the soulful strains of Baul music to the contemporary sounds of Bangla rock.Tickets are available at just $49.99, offering unbeatable value for a weekend filled with music, culture, and community. Don't miss this opportunity to witness the vibrant music scene of Bangladesh at the Dhaka Music Festival."
-      },
-      {
-        "name": "Chittagong World Music Expo",
-        "image": "https://example.com/chittagongmusicexpo.jpg",
-        "price": "$59.99",
-        "description": "Embark on a global musical journey at the Chittagong World Music Expo, a captivating event that brings together musicians and cultures from around the world. This festival, set against the stunning backdrop of Chittagong's scenic beauty, celebrates diversity through the universal language of music.Discover the enchanting rhythms and melodies of different continents as artists from diverse backgrounds come together to create a harmonious fusion of sounds. From African drumming to Latin American salsa, and from Asian traditional tunes to European classical compositions, the Chittagong World Music Expo promises an auditory adventure like no other.In addition to electrifying performances, the festival offers workshops and interactive sessions where attendees can learn about the instruments, techniques, and stories behind the music. Taste global cuisine at food stalls that represent the festival's international spirit.Tickets to the Chittagong World Music Expo are priced at $59.99, providing access to a world of music in one unforgettable weekend. Immerse yourself in the beauty of cultural exchange and musical exploration at this exceptional event."
-      },
-      {
-        "name": "Sylhet Folk Fusion Fest",
-        "image": "https://example.com/sylhetfolkfusion.jpg",
-        "price": "$39.99",
-        "description": "Journey into the heart of Sylhet's folk music traditions at the Sylhet Folk Fusion Fest. This unique festival celebrates the roots of Bangladeshi music, blending age-old folk tunes with contemporary sounds to create a captivating fusion of musical styles.Nestled amidst the picturesque landscapes of Sylhet, the festival provides a serene backdrop for a musical experience like no other. Explore the soothing melodies of traditional folk songs, played on instruments passed down through generations.The Sylhet Folk Fusion Fest is not just about listening; it's about participating and learning. Attend workshops on folk music, dance, and craftsmanship to gain a deeper understanding of the region's cultural heritage.Savor the flavors of Sylheti cuisine at food stalls that offer local delicacies. With tickets priced at just $39.99, this festival is an affordable way to immerse yourself in the rich musical tapestry of Sylhet.Whether you're a seasoned folk music enthusiast or a curious newcomer, the Sylhet Folk Fusion Fest promises an unforgettable journey into the soul of Bangladesh's musical traditions."
-      },
-      {
-        "name": "Rajshahi Classical Rhythms",
-        "image": "https://example.com/rajshahiclassical.jpg",
-        "price": "$69.99",
-        "description": "Experience the magic of classical music amidst the historical splendor of Rajshahi at the Rajshahi Classical Rhythms festival. This annual event celebrates the timeless elegance of classical music, bringing together maestros and aficionados in a breathtaking setting.The festival takes place in the heart of Rajshahi, a city steeped in history and culture. Attendees have the opportunity to enjoy performances by renowned classical musicians, both vocalists and instrumentalists, as they weave intricate melodies and rhythms.Beyond the concerts, the Rajshahi Classical Rhythms festival offers a deeper exploration of classical music through interactive sessions and masterclasses. Learn about the intricate Raagas and Taals that form the foundation of classical compositions.Enjoy the festival's serene atmosphere, surrounded by the architectural wonders of Rajshahi. Tickets are available at $69.99, offering a premium experience for lovers of classical music.Join us for a musical journey that transcends time and place, celebrating the timeless beauty of classical rhythms at the Rajshahi Classical Rhythms festival."
-      },
-      {
-        "name": "Khulna Jazz Grooves",
-        "image": "https://example.com/khulnajazzgrooves.jpg",
-        "price": "$79.99",
-        "description": "Get ready for a jazzy extravaganza at the Khulna Jazz Grooves festival. Held in the vibrant city of Khulna, this event promises to delight jazz enthusiasts with a lineup of top-notch musicians and unforgettable performances.Experience the spontaneity and improvisation that define jazz as artists take the stage to create music in the moment. From smooth jazz melodies to upbeat swing tunes, Khulna Jazz Grooves has it all.In addition to the performances, the festival offers jazz workshops and jam sessions, allowing attendees to explore their own musical talents. Savor delicious food and beverages from local vendors as you soak in the jazzy atmosphere.Tickets for Khulna Jazz Grooves are priced at $79.99, making it a fantastic value for a weekend filled with exceptional music and a lively atmosphere. Join us for a celebration of jazz in all its forms at this thrilling festival."
-      },
-      {
-        "name": "Barishal Blues Bash",
-        "image": "https://example.com/barishalblues.jpg",
-        "price": "$54.99",
-        "description": "Experience the soulful sounds of the blues at the Barishal Blues Bash, a festival that pays homage to this iconic genre. Held in the picturesque city of Barishal, this event invites you to immerse yourself in the heartfelt lyrics and soul-stirring melodies of the blues.Discover the emotional depth of blues music as artists pour their hearts into every note. From Delta blues to Chicago blues, the Barishal Blues Bash showcases a wide range of blues styles, ensuring there's something for every blues enthusiast.In addition to performances, the festival offers storytelling sessions and discussions about the history and impact of blues music. Savor delectable Southern cuisine and enjoy the friendly atmosphere of Barishal.Tickets for the Barishal Blues Bash are priced at $54.99, making it an affordable way to experience the blues in all its glory. Join us for a weekend of heartfelt music and soulful vibes at this exceptional festival."
-      }
-    ]
+    "price": 3500,
+    "description": "Welcome to the world of BanglaTunes Instruments, where music meets craftsmanship and innovation. As one of Bangladesh's premier music instrument brands, we are committed to creating instruments that inspire musicians to reach new heights in their musical journey.At BanglaTunes Instruments, we take great pride in our dedication to quality and excellence. Our range of instruments covers everything from guitars and drums to keyboards and amplifiers, designed to cater to musicians of all levels.Our team of skilled artisans and engineers ensures that every instrument is crafted with precision and care. We use the finest materials and components to create instruments that produce exceptional sound quality and durability.From the soulful strains of acoustic guitars to the powerful beats of our percussion instruments, BanglaTunes Instruments offers a diverse selection to suit various musical styles and preferences.Our instruments are priced starting at $100 and can go up to $1500, making them accessible to aspiring musicians, seasoned professionals, and everyone in between. Join the BanglaTunes Instruments community and experience the joy of creating music with instruments that are as unique as your musical journey."
   },
   {
     "id": 3,
     "img": "https://i.ibb.co/TL2WXk1/writer.png",
     "name": "Best Writer",
-    "location": "Pilton, Somerset, England",
-    "dates": [
-      "2023-06-21",
-      "2023-06-22",
-      "2023-06-23",
-      "2023-06-24",
-      "2023-06-25"
-    ],
-    "genres": ["rock", "pop", "electronic", "hip hop", "indie", "world music"],
-    "brands": ["Barclays", "BBC", "Oxfam"]
+    "price": 5780,
+    "description": "Welcome to the world of BanglaTunes Instruments, where music meets craftsmanship and innovation. As one of Bangladesh's premier music instrument brands, we are committed to creating instruments that inspire musicians to reach new heights in their musical journey.At BanglaTunes Instruments, we take great pride in our dedication to quality and excellence. Our range of instruments covers everything from guitars and drums to keyboards and amplifiers, designed to cater to musicians of all levels.Our team of skilled artisans and engineers ensures that every instrument is crafted with precision and care. We use the finest materials and components to create instruments that produce exceptional sound quality and durability.From the soulful strains of acoustic guitars to the powerful beats of our percussion instruments, BanglaTunes Instruments offers a diverse selection to suit various musical styles and preferences.Our instruments are priced starting at $100 and can go up to $1500, making them accessible to aspiring musicians, seasoned professionals, and everyone in between. Join the BanglaTunes Instruments community and experience the joy of creating music with instruments that are as unique as your musical journey."
   },
   {
     "id": 4,
     "img": "https://i.ibb.co/qph2QyB/vendors.png",
     "name": "Vendors",
-    "location": "Austin, Texas",
-    "dates": [
-      "2023-10-06",
-      "2023-10-07",
-      "2023-10-08",
-      "2023-10-09",
-      "2023-10-14",
-      "2023-10-15",
-      "2023-10-16"
-    ],
-    "genres": ["rock", "pop", "electronic", "hip hop", "indie", "country"],
-    "brands": ["AT&T", "Amazon Music", "Mastercard"]
+    "price": 5040,
+    "description": "Welcome to the world of BanglaTunes Instruments, where music meets craftsmanship and innovation. As one of Bangladesh's premier music instrument brands, we are committed to creating instruments that inspire musicians to reach new heights in their musical journey.At BanglaTunes Instruments, we take great pride in our dedication to quality and excellence. Our range of instruments covers everything from guitars and drums to keyboards and amplifiers, designed to cater to musicians of all levels.Our team of skilled artisans and engineers ensures that every instrument is crafted with precision and care. We use the finest materials and components to create instruments that produce exceptional sound quality and durability.From the soulful strains of acoustic guitars to the powerful beats of our percussion instruments, BanglaTunes Instruments offers a diverse selection to suit various musical styles and preferences.Our instruments are priced starting at $100 and can go up to $1500, making them accessible to aspiring musicians, seasoned professionals, and everyone in between. Join the BanglaTunes Instruments community and experience the joy of creating music with instruments that are as unique as your musical journey."
   },
   {
     "id": 5,
     "img": "https://i.ibb.co/VMGsKjr/compuser.png",
     "name": " lyricist and composer ",
-    "location": "Las Vegas, Nevada",
-    "dates": ["2023-05-19", "2023-05-20", "2023-05-21"],
-    "genres": ["electronic", "dance"],
-    "brands": ["Insomniac Events", "Heineken", "T-Mobile"]
+    "price": 7800,
+    "description": "Welcome to the world of BanglaTunes Instruments, where music meets craftsmanship and innovation. As one of Bangladesh's premier music instrument brands, we are committed to creating instruments that inspire musicians to reach new heights in their musical journey.At BanglaTunes Instruments, we take great pride in our dedication to quality and excellence. Our range of instruments covers everything from guitars and drums to keyboards and amplifiers, designed to cater to musicians of all levels.Our team of skilled artisans and engineers ensures that every instrument is crafted with precision and care. We use the finest materials and components to create instruments that produce exceptional sound quality and durability.From the soulful strains of acoustic guitars to the powerful beats of our percussion instruments, BanglaTunes Instruments offers a diverse selection to suit various musical styles and preferences.Our instruments are priced starting at $100 and can go up to $1500, making them accessible to aspiring musicians, seasoned professionals, and everyone in between. Join the BanglaTunes Instruments community and experience the joy of creating music with instruments that are as unique as your musical journey."
   },
   {
     "id": 6,
     "img": "https://i.ibb.co/G7RQmxF/director.png",
     "name": "Director",
-    "location": "Indio, California",
-    "dates": ["2023-04-28", "2023-04-29", "2023-04-30"],
-    "genres": ["country"],
-    "brands": ["Anheuser-Busch", "Spotify", "Visa"]
+    "price": 7900,
+    "description": "Welcome to the world of BanglaTunes Instruments, where music meets craftsmanship and innovation. As one of Bangladesh's premier music instrument brands, we are committed to creating instruments that inspire musicians to reach new heights in their musical journey.At BanglaTunes Instruments, we take great pride in our dedication to quality and excellence. Our range of instruments covers everything from guitars and drums to keyboards and amplifiers, designed to cater to musicians of all levels.Our team of skilled artisans and engineers ensures that every instrument is crafted with precision and care. We use the finest materials and components to create instruments that produce exceptional sound quality and durability.From the soulful strains of acoustic guitars to the powerful beats of our percussion instruments, BanglaTunes Instruments offers a diverse selection to suit various musical styles and preferences.Our instruments are priced starting at $100 and can go up to $1500, making them accessible to aspiring musicians, seasoned professionals, and everyone in between. Join the BanglaTunes Instruments community and experience the joy of creating music with instruments that are as unique as your musical journey."
   }
 ]

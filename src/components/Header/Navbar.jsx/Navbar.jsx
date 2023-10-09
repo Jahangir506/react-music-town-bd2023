@@ -82,7 +82,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar justify-evenly text-white py-10 mx-auto">
+      <div className="navbar justify-evenly text-white py-10 mx-auto backdrop-brightness-90">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -124,7 +124,7 @@ const Navbar = () => {
                       ? "pending"
                       : isActive
                       ? "active"
-                      : "bg-white/5 hover:bg-white/30  backdrop-brightness-75 py-2 px-3 rounded text-center"
+                      : "bg-white/10 hover:bg-white/30   py-2 px-3 rounded text-center"
                   }
                 >
                   Log Out

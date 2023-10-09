@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import bg from "../assets/images/bg.jpg";
+import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Header/Navbar.jsx/Navbar";
 
 const MainRoot = () => {

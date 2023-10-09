@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainRoot from "../layouts/MainRoot";
+import Details from "../pages/Details/Details";
 import ErrorPages from "../pages/ErrorPages/ErrorPages";
 import Home from "../pages/Home/Home";
 import Login from "../pages/Login/login";
@@ -22,8 +23,9 @@ const CreateRoutes = createBrowserRouter([
                 element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>
             },
             {
-                path: '/playSongs',
-                element: <PrivateRoute></PrivateRoute>
+                path: '/details/:id',
+                element: <PrivateRoute><Details></Details></PrivateRoute>,
+                loader: () => fetch('/music.json')
             },
             {
                 path: '/lyrics',

@@ -3,16 +3,14 @@ import { FaEye } from "react-icons/fa";
 import { FaEyeSlash, FaXTwitter } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
 import { HiArrowSmallRight } from "react-icons/hi2";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
+import Swal from 'sweetalert2';
 import { AuthContext } from "../../Providers/AuthProvider";
 import registerImg from "../../assets/images/register.png";
 
 const Register = () => {
   const { user, createUser, googleSignIn } = useContext(AuthContext);
-  const navigate = useNavigate();
-  const [registerError, setRegisterError] = useState("");
-  const [success, setSuccess] = useState("");
   const [showPass, setShowPass] = useState(false);
 
 
@@ -23,31 +21,45 @@ const Register = () => {
     const password = e.target.password.value;
     console.log(name, email, password);
 
-    setRegisterError("");
-    setSuccess("");
-
     if (password.length < 6) {
-      setRegisterError("Password should be at least 6 Characters or longer");
+      Swal.fire({
+          title: 'Password should be at least 6 characters long.!',
+          icon: 'error',
+        })
       return;
-    } else if (
-      !/^(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}[\]:;<>,.?~\\-]).+$/.test(password)
-    ) {
-      setRegisterError(
-        "Your password should have at least one upper case and special character"
-      );
+  }
+
+  if (!/[A-Z]/.test(password)) {
+      Swal.fire({
+          title: 'Password should contain at least one uppercase character.!',
+          icon: 'error',
+        })
       return;
-    }
+  }
+
+  if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+      Swal.fire({
+          title: 'Password should contain at least one special character.!',
+          icon: 'error',
+        })
+      return;
+  }
 
     createUser(email, password)
       .then((result) => {
         const registerUser = result.user;
         console.log(registerUser);
-        navigate("/");
-        setSuccess("User Create Successfully");
+        Swal.fire({
+          title: 'User Create Successfully.!',
+          icon: 'success',
+        })
+        return
       })
-      .catch((error) => {
-        console.error(error);
-        setRegisterError("Email already in Use, Please type a new email.");
+      .catch(() => {
+        Swal.fire({
+          title: 'Wrong email or password. Try again or create an account.!',
+          icon: 'error',
+        })
       });
   };
 
@@ -56,24 +68,17 @@ const Register = () => {
       .then((result) => {
         const googleUser = result.user;
         console.log(googleUser);
-        navigate("/");
       })
       .catch(() => {
-        setRegisterError("Email already in Use, Please type a new email.");
       });
   };
 
   return (
-    <div className="flex  justify-center items-center mt-32">
-      <div className="hero w-[720px]">
+    <div className="flex  justify-center items-center h-screen">
+      <div className="hero w-[720px]  mb-44">
         <div className="hero-content w-full justify-between flex-row-reverse  shadow-2xl bg-base-100 rounded-md">
           <div className="card flex-shrink-0  max-w-sm">
             <form onSubmit={handleRegister} className="card-body">
-              <div className="w-52 mx-auto">
-                {registerError && (
-                  <p className="text-red-500 text-center">{registerError}</p>
-                )}
-              </div>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Name</span>
