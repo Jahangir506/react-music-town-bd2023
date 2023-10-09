@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const MusicTownServices = ({ musicServiceCard }) => {
-  const { id, name, img } = musicServiceCard || {};
+  const { id, name, img, description, price } = musicServiceCard || {};
 
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -20,15 +20,22 @@ const MusicTownServices = ({ musicServiceCard }) => {
         <figure>
           <img src={img} alt="Shoes" />
         </figure>
-        <div className="card-body text-white">
+        <div className="p-5 text-white">
           <p className="text-center">
-            <span className="text-lg">{name}</span>{" "}
+            <span className="text-lg font-bold">{name}</span>{" "}
           </p>
+          <div className="mt-3">
+            <span>Description: </span>
+            {
+              description.length > 150 ?
+              <span className="opacity-75">{description.slice(0,150)} <Link to={`/details/${id}`} className="text-blue-600">Read More...</Link></span>
+              :
+              <span className="opacity-75">{description}</span>
+            }
+          </div>
           <p>
-            <span className="text-md">Description:</span>{" "}
-          </p>
-          <p>
-            <span className="text-md">Price:</span>{" "}
+            <span>Price:</span>
+            <span className="opacity-75"> {price}</span>
           </p>
         </div>
         <Link to={`/details/${id}`}>
